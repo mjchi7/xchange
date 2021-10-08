@@ -1,0 +1,5 @@
+project: cluster
+
+tasks:
+  start:
+    cmd: ./start-cluster.sh

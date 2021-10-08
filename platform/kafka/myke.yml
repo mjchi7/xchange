@@ -1,0 +1,8 @@
+project: kafka
+
+tasks:
+  deploy:
+    cmd: |
+      kubectl create ns kafka
+      kubectl create -n kafka -f https://strimzi.io/install/latest?namespace=kafka
+      kubectl apply -n kafka -f kafka.yml
